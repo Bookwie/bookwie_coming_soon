@@ -145,8 +145,18 @@ p {
 .logo img {
   width: 50%;
 }
+/* Ensure image scales on mobile */
+@media (max-width: 767px) {
+  .img-wrapper {
+    text-align: center; /* Center the image */
+    margin-top: 10px; /* Add spacing if needed */
+  }
+  .img-wrapper img {
+    max-width: 90%; /* Control image size */
+  }
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .img-wrapper {
     display: none;
   }
@@ -156,7 +166,7 @@ p {
   .img-wrapper {
     display: none;
   }
-}
+} */
 
 @media (max-width: 767px) {
   .odd-col {
